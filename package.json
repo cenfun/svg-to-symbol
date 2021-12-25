@@ -1,0 +1,27 @@
+{
+    "name": "svg-to-symbol",
+    "version": "1.0.0",
+    "description": "svg-to-symbol",
+    "main": "lib/index.js",
+    "scripts": {
+        "test": "node ./test/test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cenfun/svg-to-symbol.git"
+    },
+    "files": [
+        "lib"
+    ],
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.10",
+        "eight-colors": "^1.0.0",
+        "lz-utils": "^1.0.4",
+        "svgo": "^2.8.0",
+        "xml-formatter": "^2.6.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.5.0",
+        "eslint-plugin-chain": "^2.0.0"
+    }
+}
