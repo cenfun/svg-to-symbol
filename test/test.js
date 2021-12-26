@@ -13,8 +13,7 @@ const config = svgToSymbol({
 
     // outputJson: 'icons.json',
 
-    // outputLib: 'icons.js',
-    // compressLib: true
+    // outputRuntimeLib: 'icons.js'
     
 });
 
