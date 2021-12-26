@@ -66,6 +66,8 @@
             display: block;
         }
     </style>
+    <!-- test load in head -->
+    <script src="dist/icons.js"></script>
 </head>
 
 <body>
@@ -73,13 +75,14 @@
     <div class="preview-body">
         <div class="preview-container"></div>
     </div>
+    <!-- test reload -->
     <script src="dist/icons.js"></script>
     <script>
         const lib = window['icons-lib'];
         console.log(lib);
         //https://css-tricks.com/svg-symbol-good-choice-icons/
         const container = document.querySelector('.preview-container');
-        lib.list.forEach(item => {
+        lib.list.forEach(function (item) {
             const div = document.createElement('div');
             div.title = item.title;
             div.className = 'icon-item';

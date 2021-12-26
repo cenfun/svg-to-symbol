@@ -3,6 +3,8 @@ module.exports = {
     mode: 'production',
     //mode: "development",
 
+    target: ['web', 'es5'],
+
     entry: path.resolve(__dirname, 'lib/runtime/src/index.js'),
 
     output: {
@@ -21,13 +23,7 @@ module.exports = {
                 options: {
                     cacheDirectory: true,
                     babelrc: false,
-                    presets: [['@babel/preset-env', {
-                        'targets': [
-                            'defaults',
-                            'not IE 11',
-                            'maintained node versions'
-                        ]
-                    }]]
+                    presets: ['@babel/preset-env']
                 }
             }
         }]
