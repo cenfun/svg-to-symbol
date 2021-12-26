@@ -6,11 +6,15 @@ const svgToSymbol = require('../lib');
 const config = svgToSymbol({
     dirs: [path.resolve(__dirname, 'icons')],
     prefix: 'my-icon-prefix-',
-    outputDir: path.resolve(__dirname, 'dist'),
+    outputDir: path.resolve(__dirname, 'dist')
 
-    outputSvg: 'icons.svg',
-    outputJson: 'icons.json',
-    outputCompressed: 'icons-compressed.js'
+    // outputSvg: 'icons.svg',
+    // inlineSvg: false,
+
+    // outputJson: 'icons.json',
+
+    // outputLib: 'icons.js',
+    // compressLib: true
     
 });
 
