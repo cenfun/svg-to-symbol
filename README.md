@@ -49,6 +49,10 @@ npm run build
 * compressed_str_replace_holder: for compressed string
 * Lib svg_to_symbol_lib_replace_holder: for lib global name
 
+## Icons compression
+* svgo for single svg icon
+* repeated svg contents will be removed
+* lz-string compression
 ## Link
 * [https://github.com/svg/svgo](https://github.com/svg/svgo)
 * [https://css-tricks.com/svg-symbol-good-choice-icons/](https://css-tricks.com/svg-symbol-good-choice-icons/)
