@@ -37,6 +37,25 @@ npm run test
 ```
 see [test](test/test.js)
 
+# Icon HTML
+```html
+<svg pointer-events="none" width="100%" height="100%">
+    <use xlink:href="#${fullId}" />
+</svg>
+```
+Mask for round icon:
+```html
+<svg pointer-events="none" width="100%" height="100%">
+    <mask id="${fullId}-mask">
+        <rect rx="${radius}" ry="${radius}" fill="#ffffff" x="0" y="0" width="100%" height="100%" />
+    </mask>
+    <g mask="url(#${fullId}-mask)">
+        <rect rx="${radius}" ry="${radius}" fill="${color}" x="0" y="0" width="100%" height="100%" />
+        <use xlink:href="#${fullId}" />
+    </g>
+</svg>
+```
+
 # Build Compressed Runtime Lib
 ```
 npm run build
