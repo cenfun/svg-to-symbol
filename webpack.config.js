@@ -11,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, 'lib/runtime/dist'),
         filename: 'template.js',
         umdNamedDefine: true,
-        library: '{svg_to_symbol_lib_replace_holder}',
+        library: '{replace_holder_runtime_lib_name}',
         libraryTarget: 'umd'
     },
 

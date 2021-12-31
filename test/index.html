@@ -75,13 +75,13 @@
     <!-- test reload -->
     <script src="dist/icons.js"></script>
     <script>
-        const lib = window['icons-lib'];
+        const lib = window['my-icons'];
         console.log(lib);
         //https://css-tricks.com/svg-symbol-good-choice-icons/
         const container = document.querySelector('.preview-container');
         lib.list.forEach(function (item) {
             const div = document.createElement('div');
-            div.title = item.title;
+            div.title = item.id;
             div.className = 'icon-item';
             div.innerHTML = item.svg;
             container.appendChild(div);

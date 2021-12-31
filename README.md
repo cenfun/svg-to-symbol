@@ -10,17 +10,22 @@ npm i svg-to-symbol
 ```js
 const svgToSymbol = require('svg-to-symbol');
 const result = svgToSymbol({
+    name: 'my-icons',
     dirs: [path.resolve(__dirname, 'icons')],
-    prefix: 'my-icon-prefix-',
-    outputDir: path.resolve(__dirname, 'dist')
+    outputDir: path.resolve(__dirname, 'dist'),
 
     // outputSvg: 'icons.svg',
     // inlineSvg: false,
 
     // outputJson: 'icons.json',
 
-    // outputRuntimeLib: 'icons.js'
+    // outputRuntimeLib: 'icons.js',
     
+    //additional metadata
+    metadata: {
+        key: 'value'
+    }
+
 });
 
 if (result.metadata) {
@@ -65,8 +70,8 @@ npm run build
 * Self-decompressed with lz-utils/decompress on runtime
 
 ## Replace holder key
-* compressed_str_replace_holder: for compressed string
-* Lib svg_to_symbol_lib_replace_holder: for lib global name
+* replace_holder_compressed_str: for compressed string
+* replace_holder_runtime_lib_name: for lib global name
 
 ## Icons compression
 * svgo for single svg icon
