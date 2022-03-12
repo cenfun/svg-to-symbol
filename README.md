@@ -81,3 +81,8 @@ npm run build
 * [https://github.com/svg/svgo](https://github.com/svg/svgo)
 * [https://css-tricks.com/svg-symbol-good-choice-icons/](https://css-tricks.com/svg-symbol-good-choice-icons/)
 * [https://github.com/pieroxy/lz-string](https://github.com/pieroxy/lz-string)
+
+
+## Changelog
+
+* 1.0.5 fixed svg attrs
