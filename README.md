@@ -14,12 +14,10 @@ const result = svgToSymbol({
     dirs: [path.resolve(__dirname, 'icons')],
     outputDir: path.resolve(__dirname, 'dist'),
 
-    // outputSvg: 'icons.svg',
+    // outputSvg: true,
     // inlineSvg: false,
-
-    // outputJson: 'icons.json',
-
-    // outputRuntimeLib: 'icons.js',
+    // outputJson: true,
+    // outputRuntimeLib: true,
     
     //additional metadata
     metadata: {
@@ -35,6 +33,16 @@ if (result.metadata) {
 }
 ```
 see [config](lib/config.js)
+# With Namespace For Icon ID
+```js
+const result = svgToSymbol({
+    name: 'my-icons',
+    dirs: [{
+        ns1: path.resolve(__dirname, 'icons1'),
+        ns2: path.resolve(__dirname, 'icons2')
+    }],
+});
+```
 
 # Test
 ```
@@ -85,4 +93,8 @@ npm run build
 
 ## Changelog
 
-* 1.0.5 fixed svg attrs
+* 1.0.6 
+    * added namespace 
+
+* 1.0.5 
+    * fixed svg attrs
