@@ -16,12 +16,10 @@ list.forEach(item => {
         dirs: [path.resolve(__dirname, `icons/${item}`)],
         outputDir: path.resolve(__dirname, 'dist'),
     
-        outputSvg: `${item}.svg`,
+        // outputSvg: true,
         // inlineSvg: false,
-
-        outputJson: `${item}.json`,
-
-        outputRuntimeLib: `${item}.js`,
+        // outputJson: true,
+        // outputRuntimeLib: true,
     
         metadata: {
             name: item
