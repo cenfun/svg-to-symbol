@@ -21,8 +21,6 @@ const result = svgToSymbol({
     // inlineSvg: false,
     // outputJson: true,
     // outputRuntimeLib: true,
-
-    // fillCurrentColor: true,
     
     //additional metadata
     metadata: {
@@ -97,6 +95,9 @@ npm run build
 
 
 ## Changelog
+
+* 1.0.7
+    * added option  exclude and filenameReg
 
 * 1.0.6 
     * added namespace 
