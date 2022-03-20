@@ -12,12 +12,17 @@ const svgToSymbol = require('svg-to-symbol');
 const result = svgToSymbol({
     name: 'my-icons',
     dirs: [path.resolve(__dirname, 'icons')],
+    // exclude: [],
+    // filenameReg: '^[a-z0-9-.]+$',
+    
     outputDir: path.resolve(__dirname, 'dist'),
 
     // outputSvg: true,
     // inlineSvg: false,
     // outputJson: true,
     // outputRuntimeLib: true,
+
+    // fillCurrentColor: true,
     
     //additional metadata
     metadata: {
