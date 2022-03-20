@@ -17,6 +17,7 @@
     "dependencies": {
         "cheerio": "^1.0.0-rc.10",
         "eight-colors": "^1.0.0",
+        "ignore": "^5.2.0",
         "lz-utils": "^1.0.4",
         "svgo": "^2.8.0",
         "xml-formatter": "^2.6.1"
