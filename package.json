@@ -1,6 +1,6 @@
 {
     "name": "svg-to-symbol",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "svg-to-symbol",
     "main": "lib/index.js",
     "scripts": {
@@ -24,7 +24,7 @@
     },
     "devDependencies": {
         "@babel/preset-env": "^7.16.11",
-        "@tabler/icons": "^1.55.0",
+        "@tabler/icons": "^1.56.0",
         "babel-loader": "^8.2.3",
         "eslint": "^8.11.0",
         "eslint-plugin-chain": "^2.0.0",

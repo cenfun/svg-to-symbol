@@ -96,8 +96,11 @@ npm run build
 
 ## Changelog
 
+* 1.0.8
+    * added option onSVGAttribute
+
 * 1.0.7
-    * added option  exclude and filenameReg
+    * added option exclude and filenameReg
 
 * 1.0.6 
     * added namespace 
