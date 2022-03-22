@@ -13,7 +13,6 @@ const result = svgToSymbol({
     name: 'my-icons',
     dirs: [path.resolve(__dirname, 'icons')],
     // exclude: [],
-    // filenameReg: '^[a-z0-9-.]+$',
     
     outputDir: path.resolve(__dirname, 'dist'),
 
@@ -21,6 +20,9 @@ const result = svgToSymbol({
     // inlineSvg: false,
     // outputJson: true,
     // outputRuntimeLib: true,
+
+    // onSVGFilename: function(filename, item){ return filename },
+    // onSVGAttribute: function($svg, item){ },
     
     //additional metadata
     metadata: {
@@ -96,11 +98,14 @@ npm run build
 
 ## Changelog
 
+* 1.0.9
+    * added option onSVGFilename
+
 * 1.0.8
     * added option onSVGAttribute
 
 * 1.0.7
-    * added option exclude and filenameReg
+    * added option exclude
 
 * 1.0.6 
     * added namespace 
