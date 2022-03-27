@@ -1,5 +1,5 @@
-# svg-to-symbol
-tools for svg symbol, icons, compressed
+# SVG to Symbol
+Tool for svg symbol, icons, compressed
 
 # Install
 ```sh
@@ -21,6 +21,7 @@ const result = svgToSymbol({
     // outputJson: true,
     // outputRuntimeLib: true,
 
+    // callbacks
     // onSVGFilename: function(filename, item){ return filename },
     // onSVGAttribute: function($svg, item){ },
     
