@@ -98,6 +98,9 @@ npm run build
 
 ## Changelog
 
+* 1.0.10
+    * fixed onSVGFilename for namespace
+
 * 1.0.9
     * added option onSVGFilename
 
