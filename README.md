@@ -22,7 +22,7 @@ const result = svgToSymbol({
     // outputRuntimeLib: true,
 
     // callbacks
-    // onSVGFilename: function(filename, item){ return filename },
+    // onSVGName: function(name, item){ return name },
     // onSVGAttribute: function($svg, item){ },
     
     //additional metadata
@@ -99,11 +99,11 @@ npm run build
 
 ## Changelog
 
-* 1.0.10
-    * fixed onSVGFilename for namespace
+* 1.0.11
+    * fixed onSVGName for namespace
 
 * 1.0.9
-    * added option onSVGFilename
+    * added option onSVGName
 
 * 1.0.8
     * added option onSVGAttribute
