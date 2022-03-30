@@ -99,6 +99,9 @@ npm run build
 
 ## Changelog
 
+* 1.0.12
+    * remove ignore WARN
+
 * 1.0.11
     * fixed onSVGName for namespace
 
