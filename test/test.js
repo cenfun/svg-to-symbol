@@ -18,7 +18,7 @@ const svgToSymbol = require('../lib');
         // outputJson: true,
         // outputRuntimeLib: true,
 
-        onSVGAttribute: function($svg) {
+        onSVGDocument: function($svg) {
             //const fill = $svg.attr('fill');
             //if (!fill) {
             //$svg.attr('fill', 'currentColor');

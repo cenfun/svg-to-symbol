@@ -23,7 +23,7 @@ const result = svgToSymbol({
 
     // callbacks
     // onSVGName: function(name, item){ return name },
-    // onSVGAttribute: function($svg, item){ },
+    // onSVGDocument: function($svg, item){ },
     
     //additional metadata
     metadata: {
@@ -99,17 +99,15 @@ npm run build
 
 ## Changelog
 
-* 1.0.12
+* 1.0.13
     * remove ignore WARN
+    * rename option onSVGDocument
 
 * 1.0.11
     * fixed onSVGName for namespace
 
 * 1.0.9
     * added option onSVGName
-
-* 1.0.8
-    * added option onSVGAttribute
 
 * 1.0.7
     * added option exclude
