@@ -1,6 +1,6 @@
 {
     "name": "svg-to-symbol",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "description": "svg-to-symbol",
     "main": "lib/index.js",
     "scripts": {

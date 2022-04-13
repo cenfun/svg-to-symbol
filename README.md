@@ -99,6 +99,9 @@ npm run build
 
 ## Changelog
 
+* 1.0.14
+    * added onSVGNameDefault
+
 * 1.0.13
     * remove ignore WARN
     * rename option onSVGDocument
