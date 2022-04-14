@@ -1,6 +1,6 @@
 {
     "name": "svg-to-symbol",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "description": "svg-to-symbol",
     "main": "lib/index.js",
     "scripts": {
@@ -16,7 +16,7 @@
     ],
     "dependencies": {
         "cheerio": "^1.0.0-rc.10",
-        "eight-colors": "^1.0.0",
+        "eight-colors": "^1.0.1",
         "ignore": "^5.2.0",
         "lz-utils": "^1.0.4",
         "svgo": "^2.8.0",
@@ -24,12 +24,12 @@
     },
     "devDependencies": {
         "@babel/preset-env": "^7.16.11",
-        "@tabler/icons": "^1.60.0",
+        "@tabler/icons": "^1.64.0",
         "babel-loader": "^8.2.4",
-        "eslint": "^8.12.0",
+        "eslint": "^8.13.0",
         "eslint-plugin-chain": "^2.0.0",
         "heroicons": "^1.0.6",
-        "webpack": "^5.70.0",
+        "webpack": "^5.72.0",
         "webpack-cli": "^4.9.2"
     }
 }

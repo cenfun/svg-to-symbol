@@ -99,6 +99,9 @@ npm run build
 
 ## Changelog
 
+* 1.0.15
+    * fixed invalid svg tag
+
 * 1.0.14
     * added onSVGNameDefault
 

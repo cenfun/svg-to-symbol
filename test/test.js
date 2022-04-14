@@ -32,9 +32,9 @@ const svgToSymbol = require('../lib');
     });
     
     if (result.metadata) {
-        console.log(EC.green('done'));
+        EC.logGreen('done');
     } else {
-        console.log(EC.red('ERROR: Failed to generate svg symbol file'));
+        EC.logRed('ERROR: Failed to generate svg symbol file');
     }
     
 });
@@ -53,19 +53,6 @@ const result = svgToSymbol({
     name: 'namespace',
     dirs: dirs,
     outputDir: path.resolve(__dirname, 'dist'),
-
-    onSVGName: function(name, item) {
-        const nameReg = /^[a-z0-9-.]+$/g;
-        const nameTest = nameReg.test(name);
-        if (!nameTest) {
-            console.log(EC.red(`ERROR: svg name does not match "lowercase-dashed": ${item.filePath}`));
-            return;
-        }
-        if (item.namespace) {
-            name = `${item.namespace}-${name}`;
-        }
-        return name;
-    },
     
     metadata: {
         name: 'namespace'
