@@ -12,23 +12,29 @@ const svgToSymbol = require('svg-to-symbol');
 const result = svgToSymbol({
     name: 'my-icons',
     dirs: [path.resolve(__dirname, 'icons')],
-    // exclude: [],
+    exclude: [],
     
     outputDir: path.resolve(__dirname, 'dist'),
 
-    // outputSvg: true,
-    // inlineSvg: false,
-    // outputJson: true,
-    // outputRuntimeLib: true,
+    outputSvg: true,
+    inlineSvg: false,
+    outputJson: true,
+    outputRuntimeLib: true,
 
-    // callbacks
-    // onSVGName: function(name, item){ return name },
-    // onSVGDocument: function($svg, item){ },
+    onSVGName: function(name, item) {
+        return this.onSVGNameDefault(name, item);
+    },
+
+    onSVGDocument: function($svg, item) {
+
+    },
     
     //additional metadata
     metadata: {
         key: 'value'
-    }
+    },
+
+    svgo: {}
 
 });
 
